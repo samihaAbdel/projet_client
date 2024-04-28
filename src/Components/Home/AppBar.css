@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(163, 0, 0, 0.723);
+    padding: 0 50px 0 50px;
+    color: bisque;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .bar ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20%;
+    margin-top: 4%;
+}
+
+.navbar .bar ul li {
+    list-style: none;
+}
+
+.navbar .bar ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: bisque;
+}
+
+.navbar .profile-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px
+}
+
+.navbar .profile-container .notification-container {
+    cursor: pointer;
+}
+
+.navbar .profile-container .notification-container .icon ion-icon {
+    font-size: 40px;
+}
+
+.navbar .profile-container .notification-container .NotificationDropdown {
+    height: 300px;
+    width: 200px;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.591);
+    position: absolute;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .profile-container .notification-container .NotificationDropdown span {
+    color: rgba(49, 49, 49, 0.783);
+    border-bottom: 1px solid black;
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+}
+
+
+
+.navbar .profile-container .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.app-header .navbar .profile-container .notification-profile {
+    height: 180px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.591);
+    position: absolute;
+    right: 70px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-header .navbar .profile-container .notification-profile span {
+    color: rgba(49, 49, 49, 0.783);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+}
