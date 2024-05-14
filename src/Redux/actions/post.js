@@ -30,5 +30,11 @@ export const getPost = (id) => async (dispatch) => {
         dispatch({type:FAIL})
     })
 }
-//delete
-//update
+export const deletePost = (id) => async (dispatch) => {
+    await axios.delete(`http://localhost:5000/api/posts/Delete/${id}`)
+    .then(() => {
+        dispatch({type : GET_POSTS});
+    }).catch(() => {
+        dispatch({type:FAIL})
+    })
+}

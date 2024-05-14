@@ -2,15 +2,20 @@ import React, { useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useDispatch, useSelector } from "react-redux";
-import { getAllPosts } from "../../Redux/actions/post";
+import { deletePost, getAllPosts } from "../../Redux/actions/post";
 import "./style.css";
+import { Link, useNavigate } from "react-router-dom";
 function DisplayPosts () {
     const dispatch = useDispatch();
+    const navigate = useNavigate()
     useEffect(() => {
         dispatch(getAllPosts())
     },[dispatch])
     const posts = useSelector((state) => state.postReducer.posts);
-    
+    const handleDelete =(id)=>{
+        dispatch(deletePost(id))
+        navigate('/')
+    }
     return (
         <div className="pub-card">
             {posts && posts.map((p) =>
@@ -21,7 +26,9 @@ function DisplayPosts () {
                         <Card.Text>
                             {p.Description}
                         </Card.Text>
-                        <Button variant="outline-secondary">delete</Button>
+                        
+                        <Button variant="outline-secondary" onClick={()=>handleDelete(p._id)}>delete</Button>
+                        
                         <Button variant="outline-secondary">Update</Button>
                     </Card.Body>
                 </Card>)}
