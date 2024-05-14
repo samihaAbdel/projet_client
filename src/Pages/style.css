@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.home-container .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: maroon;
+    margin-top: 1%;
+}
+
+.home-container .publication .carousel .carousel-item{
+    height: 560px;
+}
+.home-container .publication .carousel .carousel-item img {
+    width: 100%;
+}
+
+.home-container .pub-card .pub {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.home-container .pub-card .pub .card {
+  background-color:rgba(205, 92, 92, 0.155);
+}
+.login {
+    background-color: rgba(128, 0, 0, 0.332);
+
+}
+.login .login-out {
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 1%;
+}
+.login .login-out .form .form-title {
+    color: rgb(63, 43, 19);
+}
+.login .login-out .form .form-type {
+   background-color: blanchedalmond;
+}
+.login .login-out .button {
+    background-color: brown;
+    margin-top: 1%;
+}
+
+.footer-basic {
+    margin-top: 2%;
+  padding:40px 0;
+  background-color:rgba(165, 42, 42, 0.509);
+  color:blanchedalmond;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #611b1b;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color : burlywood;
+  margin-bottom:0;
+}

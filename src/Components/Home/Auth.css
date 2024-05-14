@@ -1,0 +1,80 @@
+.AuthPopUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.447);
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 90vh;
+} 
+.AuthPopUp .AuthBox {
+    width: 400px;
+    height: 500px;
+    background-color: var(--secondaryColor);
+    border-radius: 25px;
+    overflow : hidden
+}
+.AuthPopUp .AuthBox header {
+    height: 10%;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AuthPopUp .AuthBox header span {
+    position: relative;
+    right: -100px;
+    cursor: pointer;
+}
+.AuthPopUp .AuthBox header ion-icon {
+    font-size: 40px;
+}
+.AuthPopUp .AuthBox .Login,
+.AuthPopUp .AuthBox .SignUp {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+.AuthPopUp .AuthBox .SignUp {
+    gap: 20px !important
+}
+.AuthPopUp .AuthBox .SignUp input,
+.AuthPopUp .AuthBox .Login input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primaryColor);
+    background-color: transparent;
+
+}
+
+.AuthPopUp .AuthBox .Login span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.AuthPopUp .AuthBox .Login span .Click:hover {
+    text-decoration: underline;
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+.AuthPopUp .AuthBox .Login button , 
+.AuthPopUp .AuthBox .SignUp button {
+    width : 50%;
+    border: 2px solid var(--primaryColor);
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    height: 40px;
+}
+.AuthPopUp .AuthBox .Login button:hover , 
+.AuthPopUp .AuthBox .SignUp button:hover {
+    color : var(--thirdColor);
+    background-color: var(--primaryColor);
+}

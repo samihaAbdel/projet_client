@@ -6,7 +6,8 @@ import {
     GET_USERS,
     DELETE_USER,
     ADD_USER,
-    FAIL_USER
+    FAIL_USER,
+    CURRENT_USER_Fail
       } from '../actionsType/user';
 const initialState = {
     users:[],
@@ -38,6 +39,8 @@ const initialState = {
         return { ...state , result : payload };
       case CURRENT_USER:
         return { ...state, user: payload.user, isAuth: payload.isAuth };
+      case CURRENT_USER_Fail : 
+      return {...state, user : null , isAuth: false}
       case LOGOUT_USER:
         localStorage.removeItem('token');
         return { ...state, user: {}, isAuth: false };

@@ -1,0 +1,53 @@
+.CreatePostBox {
+    display: flex;
+    justify-content: center;
+}
+.CreatePostBox .box {
+    width: 80%;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+}
+.CreatePostBox .box form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.CreatePostBox .box form .duo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.CreatePostBox .box form .duo input,
+.CreatePostBox .box textarea {
+    width: 50%;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--primaryColor);
+}
+.CreatePostBox .box button {
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 3px solid var(--primaryColor);
+    font-size: 20px;
+}
+.CreatePostBox .box button:hover {
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    border: 3px solid var(--primaryColor);
+    color: var(--thirdColor);
+}
+.pub-card {
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+}

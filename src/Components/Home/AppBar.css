@@ -30,7 +30,20 @@
     text-decoration: none;
     color: bisque;
 }
-
+.navbar  .GetStarted{
+    width : 200px;
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    border-radius: 50px;
+    font-size: 20px;
+    height: 40px;
+}
+.navbar  .GetStarted:hover {
+    color : var(--thirdColor);
+    background-color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+}
 .navbar .profile-container {
     display: flex;
     justify-content: flex-start;
@@ -42,52 +55,30 @@
     cursor: pointer;
 }
 
-.navbar .profile-container .notification-container .icon ion-icon {
-    font-size: 40px;
-}
-
-.navbar .profile-container .notification-container .NotificationDropdown {
-    height: 300px;
-    width: 200px;
-    overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.591);
-    position: absolute;
-    right: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar .profile-container .notification-container .NotificationDropdown span {
-    color: rgba(49, 49, 49, 0.783);
-    border-bottom: 1px solid black;
-    padding: 20px 0 20px 0;
-    font-size: 16px;
-}
-
-
-
 .navbar .profile-container .profile img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
-
-.app-header .navbar .profile-container .notification-profile {
+.prof-container .notification-profile {
     height: 180px;
-    width: 100px;
-    background-color: rgba(255, 255, 255, 0.591);
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.861);
     position: absolute;
-    right: 70px;
+    right: 40px;
     top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
 }
 
-.app-header .navbar .profile-container .notification-profile span {
+.prof-container .notification-profile span {
     color: rgba(49, 49, 49, 0.783);
     border-bottom: 1px solid rgba(0, 0, 0, 0.45);
-    padding: 20px 0 20px 0;
+    padding: 20px;
     font-size: 16px;
+    cursor: pointer;
+    width: 100%;
 }
